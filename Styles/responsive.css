@@ -1,0 +1,179 @@
+@media screen and (max-width: 736px) {
+  .middle ul.social li {
+    margin: 0 0.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-content,
+  .layer {
+    min-height: 35em;
+  }
+  .benifit-left-info, .benifit-left-info, .benifit-content {
+    text-align: center !important;
+    margin-top: 2em;
+}
+.benifit-icon {
+    text-align: center;
+    margin: 0 auto;
+}
+.test-info {
+    padding: 2em 0em 0 0em;
+    margin: 0 auto;
+    width: 100%;
+}
+#testimonials, .layer.test {
+    min-height: 18em;
+}
+.main-content, .layer {
+    min-height: 35em;
+}
+#testimonials, .layer.test {
+    min-height: 18em;
+}
+.test-info {
+    padding: 2em 0em 0 0em;
+    margin: 0 auto;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .main-content,
+  .layer {
+    min-height: 35em;
+  }
+  .banner-info-w3ls {
+    padding-top: 13em;
+  }
+  .middle-right h6 {
+    font-size: 1em;
+}
+.main-content, .layer {
+    min-height: 35em;
+}
+.navbar-nav {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0 !important;
+  gap: 8px;
+}
+
+.navbar-collapse.show {
+  background-color: #f8f9fa; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 15px 9px; 
+  transition: all 0.3s ease-in-out; 
+}
+
+.navbar-collapse.show .nav-link {
+  color: #333; 
+  font-size: 1.1rem; 
+  padding: 10px 15px; 
+} 
+
+
+.navbar-nav .nav-link {
+  font-size: 16px; 
+}
+}
+
+@media (max-width: 991px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  .toggle {
+    display: block;
+    padding: 6px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    float: right;
+    margin-right: 0em;
+    background-color: #fff;
+    color: #1b1d1d;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer !important;
+  }
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+  }
+  h3.tittle, h3.tittle.two {
+    font-size: 2em;
+}
+.ab-content {
+    width: 50%;
+    float: left;
+}
+.ab-content-inner {
+    padding: 2em 1em;
+}
+.test-info {
+    padding: 2em 0em 0 0em;
+    margin: 0 auto;
+    width: 100%;
+}
+.asap-w3pvt-footer-logo {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 1080px) {
+  .banner-info-w3ls {
+    padding-top: 15em;
+  }
+  .order-info {
+    margin-top: 5em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    h3.tittle.order {
+        font-size: 1.1em;
+    }
+    a.read-more {
+        padding: 0.8em 1.5em;
+    }
+    a.btn.thar-four {
+        padding: 1em 1em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+  .banner-info-w3ls h3 {
+    font-size: 3.5em;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .main-content,
+  .layer {
+    min-height: 40em;
+  }
+  .banner-info-w3ls h3 {
+    font-size: 3.5em;
+    width: 62%;
+  }
+  .order-info {
+    margin-top: 6em;
+  }
+  .main-content, .layer {
+    min-height: 40em;
+}
+ul.footer-nav-lavi li a {
+    font-size: 0.8em;
+}
+}

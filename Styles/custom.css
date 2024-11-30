@@ -1,0 +1,16 @@
+.buttn{
+    background-color: var(--ecom-btn-color);
+    border: none;
+    padding: 10px 14px;
+    font-weight: var(--ecom-font-weight);
+    border-radius: 50px;
+    border-radius: 5px;
+    color: var( --ecom-btn-text);
+    font-size: var(--ecom-font-size);
+    letter-spacing: 0.6px;
+    transition: all 0.3s ease;
+
+}
+.buttn:hover{
+    transform: scale(1.05);
+}
