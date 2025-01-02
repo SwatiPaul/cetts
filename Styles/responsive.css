@@ -77,8 +77,13 @@
   font-size: 16px; 
 }
 }
-
+@media (min-width: 991px)  {
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0 !important;
+  }
+}
 @media (max-width: 991px) {
+  
   #logo {
     display: block;
     padding: 0;
@@ -164,8 +169,9 @@
     min-height: 40em;
   }
   .banner-info-w3ls h3 {
-    font-size: 3.5em;
+    font-size: 3.2rem;
     width: 62%;
+    line-height: 70px;
   }
   .order-info {
     margin-top: 6em;
