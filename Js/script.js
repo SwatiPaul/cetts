@@ -50,23 +50,7 @@ images.forEach(img => {
   slider.appendChild(clone);
 });
 
-// Testimonias
 
-const testimonialContainer = document.querySelector('.testimonial-container');
-const testimonialCards = document.querySelectorAll('.testimonial-card');
-const nextBtn = document.getElementById('next-btn');
-
-let currentIndex = 0;
-
-nextBtn.addEventListener('click', () => {
-  currentIndex++;
-  if (currentIndex >= testimonialCards.length) {
-    currentIndex = 0; // Loop back to the first card
-  }
-
-  // Slide to the next card
-  testimonialContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-});
 
 // Buses
 
@@ -143,3 +127,27 @@ const categoryData = {
   window.addEventListener("DOMContentLoaded", () => {
     renderGallery("car12"); // Render 12 SEATER category
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let goTopBtn = document.getElementById("goTopBtn");
+
+    // Show the button when scrolling
+    window.addEventListener("scroll", function () {
+        if (document.documentElement.scrollTop > 300) {
+            goTopBtn.classList.add("show");
+        } else {
+            goTopBtn.classList.remove("show");
+        }
+    });
+
+    // Scroll to top when clicked
+    goTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
+
+

@@ -15,6 +15,7 @@
     <link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
     <!-- Add AOS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="Styles/style.css">
@@ -40,7 +41,7 @@
        <header id="header" class="header">
         <div class="container-fluid px-lg-5">
              <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light w-100 ">
+            <nav class="navbar navbar-expand-lg navbar-light w-100 ">
     <div class="container-fluid">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -58,6 +59,8 @@
 
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
+             <!-- Close Button -->
+             <button class="btn-close position-absolute top-0 end-0 m-3 d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarNav"></button>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
@@ -67,61 +70,25 @@
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
             </ul>
-
-            <!-- Search and Buttons -->
-            <!-- <div class="search_and_btn">
-                <button class="btn  login">Log In</button>
-                <button class="buttn get-started">Get Started</button>
-                <form class="d-flex align-items-center">
-                    <i class="bi bi-search"></i>
-                    
-                </form>
-            </div> -->
         </div>
     </div>
-</nav>
+            </nav>
         </div>
     </header>
     <!-- Header -->
-
     <!-- Main Content -->
-    <!-- <div class="main-content" id="home">
-        <div class="layer">
-            <div class="container">
-                
-                <div class="banner-info-w3ls text-left">
-                    <h3>Enjoy The Comfortable Trip</h3>
-                    <div class="read-more">
-                        <a href="#about" class="read-more scroll btn">Read More </a>
-                    </div>
-                </div>
-                <div class="row order-info">
-                    <div class="middle mt-md-3 col-sm-6 text-left">
-                        <ul class="social mb-4">
-                            <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                        </ul>
-
-                    </div>
-                    <div class="middle-right mt-md-3 col-sm-6 text-sm-right">
-                        <h6><span class="fa fa-phone"></span> Call Now : +91 9433013425</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-   <div class="main-content">
+   <div class="main-content" data-aos="fade-up" data-aos-delay="150">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Slide 1 -->
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="2000">
             <img src="/Image/Img04.jpg" class="d-block w-100" alt="Slide 1">
             <div class="carousel-caption text-left">
                 <div class="banner-info-w3ls text-left">
-                    <h3>Enjoy The Comfortable Trip</h3>
+                    <h3>Affordable Car Rentals for Every Trip</h3>
+                    <p>Flexible Plans, No Hidden Charges, and the Best Prices.</p>
                     <div class="read-more">
-                        <a href="#about" class="read-more scroll btn">Know More </a>
+                        <a href="#about" class="read-more scroll btn">Rent a Car </a>
                     </div>
                 </div>
                 <div class="row order-info">
@@ -144,13 +111,14 @@
             </div>
           </div>
           <!-- Slide 2 -->
-          <div class="carousel-item">
+          <div class="carousel-item"  data-bs-interval="2000">
             <img src="/Image/Img05.jpg" class="d-block w-100" alt="Slide 2">
             <div class="carousel-caption text-center">
                 <div class="banner-info-w3ls text-left">
-                    <h3>Enjoy The Comfortable Trip</h3>
+                    <h3>Book Your Ride in Seconds!</h3>
+                    <p>Affordable, Reliable, and Available 24/7. Just One Click Away!</p>
                     <div class="read-more">
-                        <a href="#about" class="read-more scroll btn">Know More </a>
+                        <a href="#about" class="read-more scroll btn">Book Now </a>
                     </div>
                 </div>
                 <div class="row order-info">
@@ -171,13 +139,42 @@
             </div>
           </div>
           <!-- Slide 3 -->
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="/Image/Img10.jpg" class="d-block w-100" alt="Slide 3">
             <div class="carousel-caption text-center">
                 <div class="banner-info-w3ls text-left">
-                    <h3>Enjoy The Comfortable Trip</h3>
+                    <h3>Ride in Style & Comfort</h3>
+                    <p>Luxury Cars for Business, Events & Special Occasions.</p>
                     <div class="read-more">
-                        <a href="#about" class="read-more scroll btn">Know More </a>
+                        <a href="#about" class="read-more scroll btn">Explore Luxury </a>
+                    </div>
+                </div>
+                <div class="row order-info">
+                    <div class="middle mt-md-3 col-sm-6 text-left">
+                        <ul class="social mb-4">
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="https://www.gmail.com" target="_blank"><i class="bbi bi-envelope-fill"></i></a></li>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="middle-right mt-md-3 col-sm-6 text-sm-right">
+                        <h6><span class="fa fa-phone"></span> Call Now : +91 9433013425</h6>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item"  data-bs-interval="2000">
+            <img src="/Image/banner04.png" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption text-center">
+                <div class="banner-info-w3ls text-left">
+                    <h3>On-Time Pickups, Hassle-Free Rides!</h3>
+                    <p>Book Your Airport Transfer & City Rides with Ease.</p>
+                    <div class="read-more">
+                        <a href="#about" class="read-more scroll btn">Book a Ride </a>
                     </div>
                 </div>
                 <div class="row order-info">
@@ -213,16 +210,16 @@
     <!-- Main Content -->
     <!-- Banner Layout -->
     <section class="banner-bottom-w3layouts" id="about">
-        <div class="container py-md-3">
+        <div class="container">
 
 
             <div class="row banner-grids align-items-center">
-                <div class="col-md-6 content-left-bottom text-left pr-lg-5">
+                <div class="col-sm-12 col-md-12 col-lg-6 content-left-bottom text-left pr-lg-5" data-aos="fade-up" data-aos-delay="150">
                     <h1> ABOUT US </h1>
                     <p class=" text-left">Welcome to <b>City Express Tourist Transport Service</b>, West Bengal’s trusted car booking service. Our mission is to provide <b> reliable, safe, and convenient transportation solutions</b> tailored to your needs. Whether you’re planning a <b> business trip, a family outing, or just a ride </b> across the city, we’re here to make your journey <b> seamless and enjoyable</b>.</p>
 
                 </div>
-                <div class="col-md-6 content-right-bottom text-left">
+                <div class="col-sm-12 col-md-12 col-lg-6 content-right-bottom text-left" data-aos="fade-up" data-aos-delay="150">
                     <img src="/Image/about-us.jpg" alt="about-us" class="img-fluid about-img">
                 </div>
             </div>
@@ -233,11 +230,13 @@
     <section class="services" id="services">
         <div class="container">
 
-            <div class="header pb-lg-3 pb-3 text-center">
-                <h1 class="tittle mb-lg-3 mb-3">What We Offer</h1>
+            <div class="row">
+                <div class="header pb-lg-3 pb-3 text-center" data-aos="fade-up" data-aos-delay="150">
+                    <h1 class="tittle mb-lg-3 mb-3">What We Offer</h1>
+                </div>
             </div>
             <div class="row ab-info mt-lg-4">
-                <div class="col-lg-4 ab-content">
+                <div class="col-12 col-sm-6 col-md-12  col-lg-4 ab-content" data-aos="fade-up" data-aos-delay="250">
                     <div class="ab-content-inner">
                         <div class="ab-info-con">
                             <div class="ab-icon mx-auto"><i class="bi bi-bus-front"></i></div>
@@ -246,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 ab-content">
+                <div class="col-12 col-sm-6 col-md-12 col-lg-4 ab-content" data-aos="fade-up" data-aos-delay="300">
                     <div class="ab-content-inner">
                         <div class="ab-info-con">
                             <div class="ab-icon mx-auto"><i class="bi bi-calendar"></i></div>
@@ -255,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 ab-content">
+                <div class="col-12 col-sm-6 col-md-12 col-lg-4 ab-content" data-aos="fade-up" data-aos-delay="350">
                     <div class="ab-content-inner">
                         <div class="ab-info-con">
                             <div class="ab-icon mx-auto"><i class="bi bi-clock"></i></div>
@@ -271,28 +270,28 @@
     <!-- Why Choose Us? -->
     <section class="mid-sec" id="menu">
         <div class="container py-lg-5">
-            <div class="header pb-lg-3 pb-3 text-center">
+            <div class="header pb-lg-3 pb-3 text-center" data-aos="fade-up" data-aos-delay="250">
                 <h1 class="tittle">Why Choose Us?</h1>
             </div>
             <div class="row middile-inner-con mt-md-3">
-                <div class="col-lg-4 benifit-content">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-md-8 benifit-left-info text-right">
+                <div class="col-12 col-md-12 col-lg-4 benifit-content">
+                    <div class="row benefit-res-mob d-flex align-items-center" data-aos="fade-up" data-aos-delay="150">
+                        <div class="col-md-10 benifit-left-info text-right">
                             <h4 class="mb-3">Punctuality Guaranteed</h4>
                             <p>We value your time and always strive to be on schedule.</p>
                         </div>
-                        <div class="col-md-4 benifit-icon-content">
+                        <div class="col-md-2 benifit-icon-content">
                             <div class="benifit-icon">
                                 <i class="bi bi-tags-fill"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="row my-4 d-flex align-items-center">
-                        <div class="col-md-8 benifit-left-info text-right">
+                    <div class="row benefit-res-mob my-4 d-flex align-items-center" data-aos="fade-up" data-aos-delay="250">
+                        <div class="col-md-10 benifit-left-info text-right">
                             <h4 class="mb-3">Transparent Pricing</h4>
                             <p>No hidden charges—what you see is what you pay.</p>
                         </div>
-                        <div class="col-md-4 benifit-icon-content">
+                        <div class="col-md-2 benifit-icon-content">
                             <div class="benifit-icon">
                                 <i class="bi bi-currency-rupee"></i>
                             </div>
@@ -300,29 +299,29 @@
                     </div>
                   
                 </div>
-                <div class="col-lg-4 benifit-content">
-                    <img src="/Image/benifits.jpg" alt="" class="img-fluid">
+                <div class="col-12 col-md-0 col-lg-4 benifit-content benefit-img" data-aos="fade-up" data-aos-delay="250">
+                    <img src="/Image/benifits.jpg" alt="">
                 </div>
-                <div class="col-lg-4 benifit-content">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-md-4 benifit-icon-content">
-                            <div class="benifit-icon text-md-center mx-auto">
+                <div class="col-12 col-md-12 col-lg-4 benifit-content">
+                    <div class="row benefit-res d-flex align-items-center" data-aos="fade-up" data-aos-delay="150">
+                        <div class="col-md-2 benifit-icon-content">
+                            <div class="benifit-icon text-md-center ">
                                 <i class="bi bi-shield"></i>
                             </div>
                         </div>
-                        <div class="col-md-8 benifit-left-info text-left">
+                        <div class="col-md-10 benifit-left-info text-left">
                             <h4 class="mb-3">Safety First</h4>
                             <p>Our vehicles undergo regular maintenance, and our drivers are background-verified for your safety.</p>
                         </div>
                     </div>
 
-                    <div class="row  my-4 d-flex align-items-center">
-                        <div class="col-md-4 benifit-icon-content">
-                            <div class="benifit-icon text-md-center mx-auto">
+                    <div class="row  benefit-res my-4 d-flex align-items-center" data-aos="fade-up" data-aos-delay="2   50">
+                        <div class="col-md-2 benifit-icon-content">
+                            <div class="benifit-icon text-md-center ">
                                 <i class="bi bi-globe-americas"></i>
                             </div>
                         </div>
-                        <div class="col-md-8 benifit-left-info text-left">
+                        <div class="col-md-10 benifit-left-info text-left">
                             <h4 class="mb-3">Local Expertise</h4>
                             <p>We know West Bengal like the back of our hand, ensuring you get the fastest and most efficient routes.</p>
                         </div>
@@ -482,17 +481,17 @@
             </section> -->
     <!--// gallery -->
     <!--/order-now-->
-    <section class="order-sec pb-5 pt-md-0 pt-5">
+    <section class="order-sec pb-5 pt-md-0 pt-5" data-aos="fade-up" data-aos-delay="150">
         <div class="container py-lg-3">
             <div class="test-info text-center">
-                <h3 class="tittle order">
+                <h3 class="tittle order" data-aos="fade-up" data-aos-delay="250">
                     <span>CALL US TO BOOK A TRIP</span>The operator will call back immediately and report the cost of
                     travel
                 </h3>
                 <h4 class="tittle mt-3">8787774071
                 </h4>
 
-                <div class="read-more mx-auto m-0 text-center">
+                <div class="read-more mx-auto m-0 text-center" data-aos="fade-up" data-aos-delay="250">
                     <a href="tel:+918787774071" class="read-more scroll btn">Book Now</a>
                 </div>
             </div>
@@ -541,7 +540,7 @@
     <!--//testimonials-->
 
     <!-- contact -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-delay="150">
         <div class="container">
             <div class="header pb-3 text-center">
                 <h3 class="tittle mb-lg-5 mb-3">Have a Questions?</h3>
@@ -549,7 +548,7 @@
 
             <div class="contact-form mx-auto text-left">
                 <form name="contactform" id="contactform1" method="post" action="#">
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-delay="250">
                         <div class="col-lg-5 con-gd">
                             <div class="form-group">
                                 <label>Name *</label>
@@ -583,7 +582,7 @@
                         <div class="col-md-12 text-center">
                             <i class="bi bi-geo-alt-fill"></i>
 
-                            <div class="">
+                            <div class="" data-aos="fade-up" data-aos-delay="250">
                                 <h6>Location</h6>
                             <p>City Express Tourist Transport Service
                                 <br>1/1 No, Ramkrishna Garh Road,Itagacha
@@ -601,7 +600,7 @@
                         <div class="col-md-12 text-center">
                             <i class="bi bi-envelope"></i>
 
-                          <div class="">
+                          <div class="" data-aos="fade-up" data-aos-delay="300">
                             <h6>Email</h6>
                             <a href="/cdn-cgi/l/email-protection#630a0d050c23061b020e130f064d000c0e"><span
                                     class="__cf_email__"
@@ -615,7 +614,7 @@
                     </div>
                 </li>
                 <li class="col-lg-4 adress-info">
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-delay="350">
                         <!-- <div class="col-md-3 text-lg-center adress-icon">
                         </div> -->
                         <div class="col-md-12 text-center">
@@ -710,6 +709,10 @@
             </div>
         </div>
     </footer>
+
+    <button id="goTopBtn" class="go-top-btn" onclick="scrollToTop()">
+        <i class="bi bi-arrow-up"></i>
+    </button>
     
 
         <!-- Bootstrap JS -->
@@ -717,8 +720,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-        <!-- Add AOS JS -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <!-- AOS JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+         AOS.init(); 
+        </script>
     
         <script src="/js/script.js"></script>
 </body>
