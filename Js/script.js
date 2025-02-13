@@ -150,4 +150,15 @@ const categoryData = {
 });
 
 
+// Nav active
+document.addEventListener("DOMContentLoaded", function () {
+  let currentUrl = window.location.pathname.split("/").pop();
+
+  document.querySelectorAll(".nav-link").forEach(link => {
+      if (link.getAttribute("href") === currentUrl) {
+          link.classList.add("active");
+      }
+  });
+});
+
 
