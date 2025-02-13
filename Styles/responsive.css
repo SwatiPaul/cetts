@@ -11,7 +11,10 @@
   }
   .benifit-left-info, .benifit-left-info, .benifit-content {
     text-align: center !important;
-    margin-top: 2em;
+    margin-top: 1rem;
+}
+.benifit-content.row:first-child{
+  flex-direction: column-reverse;
 }
 .benifit-icon {
     text-align: center;
@@ -39,15 +42,20 @@
 }
 
 @media screen and (max-width: 768px) {
+  .footer-logo{
+    width: 50%;
+  }
   .main-content,
   .layer {
     min-height: 35em;
   }
   .banner-info-w3ls {
-    padding-top: 13em;
+    /* padding-top: 13em; */
+    display: none;
   }
   .middle-right h6 {
-    font-size: 1em;
+    font-size: 14px;
+    text-align: left;
 }
 .main-content, .layer {
     min-height: 35em;
@@ -56,9 +64,46 @@
   flex-direction: column;
   align-items: flex-start;
   margin-left: 0 !important;
-  gap: 8px;
+  gap: 0;
+  width: 100%;
+}
+.header .container-fluid{
+  padding: 0 !important;
+}
+/* .header{
+  position: absolute;
+} */
+h4.tittle{
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.social{
+  margin-bottom: 0.5rem !important;
+  padding-left: 0 !important;
+    text-align: left;
+}
+.order-info{
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+  width: 100%;
+        text-wrap: nowrap;
+}
+section{
+  padding: 40px 0;
 }
 
+#about p{
+  font-size: 14px;
+}
+.logo{
+  width: 135px;
+  padding: 0;
+}
+.middle ul.social li a{
+  height: 10px;
+  width: 10px;
+}
 .navbar-collapse.show {
   background-color: #f8f9fa; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -71,10 +116,18 @@
   font-size: 1.1rem; 
   padding: 10px 15px; 
 } 
-
-
 .navbar-nav .nav-link {
   font-size: 16px; 
+}
+.main-content, .layer{
+  min-height: 20rem !important;
+  height: 20rem;
+}
+.main-content .carousel-item img{
+  height: 20rem;
+}
+.benefit-res-mob{
+  flex-direction: column-reverse !important;
 }
 }
 @media (min-width: 991px)  {
@@ -118,12 +171,12 @@
   h3.tittle, h3.tittle.two {
     font-size: 2em;
 }
-.ab-content {
+/* .ab-content {
     width: 50%;
     float: left;
-}
+} */
 .ab-content-inner {
-    padding: 2em 1em;
+    padding: 1rem;
 }
 .test-info {
     padding: 2em 0em 0 0em;
@@ -154,11 +207,27 @@
     a.btn.thar-four {
         padding: 1em 1em;
     }
+    .benefit-img img{
+      display: none;
+    }
+    .benifit-content .row:first-child{
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+    .benifit-content .row:nth-child(2){
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+    .benifit-content .benefit-res{
+      width: 100%;
+      flex-direction: row !important;
+    }
+    
 }
 
 @media screen and (max-width: 1280px) {
   .banner-info-w3ls h3 {
-    font-size: 3.5em;
+    font-size: 2.5rem;
     width: 70%;
   }
 }
@@ -166,19 +235,17 @@
 @media screen and (max-width: 1366px) {
   .main-content,
   .layer {
-    min-height: 40em;
+    /* min-height: 40em; */
   }
   .banner-info-w3ls h3 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     width: 62%;
-    line-height: 70px;
+    /* line-height: 70px; */
   }
   .order-info {
     margin-top: 6em;
   }
-  .main-content, .layer {
-    min-height: 40em;
-}
+
 ul.footer-nav-lavi li a {
     font-size: 0.8em;
 }

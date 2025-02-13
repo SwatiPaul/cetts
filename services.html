@@ -89,7 +89,7 @@
             <div class="container">
 
                 <div class="banner-text ">
-                    <h3>Our Service</h3>
+                    <h3>Our Services</h3>
                    
                 </div>
             </div>
@@ -107,7 +107,7 @@
             </div>
             
             <div class="row gap-y20">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
                         <div class="card">
                             <img src="/Image/Services/service01.webp" class="card-img-top" alt="service01">
                             <div class="card-body">
@@ -125,7 +125,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <img src="/Image/Services/service02.jpg" class="card-img-top" alt="service02">
                             <div class="card-body">
@@ -143,7 +143,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
                         <div class="card">
                             <img src="/Image/Services/service03.jpg" class="card-img-top" alt="service03">
                             <div class="card-body">
@@ -160,7 +160,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
                         <div class="card">
                             <img src="/Image/Services/service04.jpg" class="card-img-top" alt="service04">
                             <div class="card-body">
@@ -186,60 +186,105 @@
     </section>
 
     <!-- Testimonials -->
-     <section>
+    <section data-aos="fade-up" data-aos-delay="150">
         <div class="container">
             <div class="row">
                 <h1 class="text-center mb-3">What Our Customers Say</h1>
             </div>
             <div class="row">
-                <div class="testimonial-container">
-                    <div class="testimonial-card col-12 col-md-3 col-lg-4">
-                      <img src="/Image/avatr2.png" alt="Client 1" class="client-img">
-                      <div class="testimonial-content">
-                        <p class="client-name">John Doe</p>
-                        <div class="client-rating">⭐⭐⭐⭐⭐</div>
-                        <p class="client-review">"Amazing service! The ride was smooth, and the driver was professional."</p>
-                      </div>
-                    </div>
-              
-                    <div class="testimonial-card col-12 col-md-3 col-lg-4">
-                      <img src="/Image/avatr2.png" alt="Client 2" class="client-img">
-                      <div class="testimonial-content">
-                        <p class="client-name">Jane Smith</p>
-                        <div class="client-rating">⭐⭐⭐⭐⭐</div>
-                        <p class="client-review">"Quick and easy booking. The car was clean, and I felt safe throughout the journey."</p>
-                      </div>
-                    </div>
-              
-                    <div class="testimonial-card col-12 col-md-3 col-lg-4">
-                      <img src="/Image/avatr2.png" alt="Client 3" class="client-img">
-                      <div class="testimonial-content">
-                        <p class="client-name">Mike Johnson</p>
-                        <div class="client-rating">⭐⭐⭐⭐⭐</div>
-                        <p class="client-review">"Highly recommend! Very professional and on time. Will use this service again."</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card col-12 col-md-3 col-lg-4">
-                        <img src="/Image/avatr2.png" alt="Client 3" class="client-img">
-                        <div class="testimonial-content">
-                          <p class="client-name">Mike Johnson</p>
-                          <div class="client-rating">⭐⭐⭐⭐⭐</div>
-                          <p class="client-review">"Highly recommend! Very professional and on time. Will use this service again."</p>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                         <div class="row">
+                            <div class="col-md-4">
+                                <div class="testimonial-card text-center">
+                                    <img src="/Image/avatr2.png" alt="Client 1" class="client-img">
+                                    <div class="testimonial-content">
+                                        <p class="client-name">John Doe</p>
+                                        <div class="client-rating">⭐⭐⭐⭐⭐</div>
+                                        <p class="client-review">"Amazing service! The ride was smooth, and the driver was professional."</p>
+                                    </div>
+                                </div>
+                            
+                               
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card text-center">
+                                    <img src="/Image/avatr2.png" alt="Client 2" class="client-img">
+                                    <div class="testimonial-content">
+                                        <p class="client-name">Jane Smith</p>
+                                        <div class="client-rating">⭐⭐⭐⭐⭐</div>
+                                        <p class="client-review">"Quick and easy booking. The car was clean, and I felt safe throughout the journey."</p>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card text-center">
+                                    <img src="/Image/avatr2.png" alt="Client 3" class="client-img">
+                                    <div class="testimonial-content">
+                                        <p class="client-name">Mike Johnson</p>
+                                        <div class="client-rating">⭐⭐⭐⭐⭐</div>
+                                        <p class="client-review">"Highly recommend! Very professional and on time. Will use this service again."</p>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
                         </div>
-                      </div>
-                      <div class="testimonial-card col-12 col-md-3 col-lg-4">
-                        <img src="/Image/avatr2.png" alt="Client 3" class="client-img">
-                        <div class="testimonial-content">
-                          <p class="client-name">Mike Johnson</p>
-                          <div class="client-rating">⭐⭐⭐⭐⭐</div>
-                          <p class="client-review">"Highly recommend! Very professional and on time. Will use this service again."</p>
-                        </div>
-                      </div>
-                  </div>
-                  <!-- <button id="next-btn" class="next-btn">Next</button> -->
+                        <div class="carousel-item ">
+                            <div class="row">
+                               <div class="col-md-4">
+                                   <div class="testimonial-card text-center">
+                                       <img src="/Image/avatr2.png" alt="Client 1" class="client-img">
+                                       <div class="testimonial-content">
+                                           <p class="client-name">John Doe</p>
+                                           <div class="client-rating">⭐⭐⭐⭐⭐</div>
+                                           <p class="client-review">"Amazing service! The ride was smooth, and the driver was professional."</p>
+                                       </div>
+                                   </div>
+                               
+                                  
+                               </div>
+                              
+                               <div class="col-md-4">
+                                   <div class="testimonial-card text-center">
+                                       <img src="/Image/avatr2.png" alt="Client 3" class="client-img">
+                                       <div class="testimonial-content">
+                                           <p class="client-name">Mike Johnson</p>
+                                           <div class="client-rating">⭐⭐⭐⭐⭐</div>
+                                           <p class="client-review">"Highly recommend! Very professional and on time. Will use this service again."</p>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                <div class="testimonial-card text-center">
+                                    <img src="/Image/avatr2.png" alt="Client 2" class="client-img">
+                                    <div class="testimonial-content">
+                                        <p class="client-name">Jane Smith</p>
+                                        <div class="client-rating">⭐⭐⭐⭐⭐</div>
+                                        <p class="client-review">"Quick and easy booking. The car was clean, and I felt safe throughout the journey."</p>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                            </div>
+                           </div>
+                        
+                    </div>
+    
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
-     </section>
+    </section>
 
     <footer>
         <div class="footer-section pt-5">
@@ -323,8 +368,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Add AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <!-- AOS JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+    AOS.init(); 
+   </script>
 
     <script src="/js/script.js"></script>
 </body>
