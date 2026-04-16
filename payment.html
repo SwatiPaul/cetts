@@ -1,232 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Express Tourist Transport Service</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | City Express Tourist Transport – Secure Online Payment Kolkata</title>
+  <meta name="description" content="Pay for your City Express ride securely online via Razorpay, UPI, credit/debit cards or net banking. Also accept cash payment. Safe & transparent transactions.">
+  <meta name="keywords" content="pay online cab Kolkata, UPI payment transport, Razorpay car booking, secure transport payment West Bengal">
+  <link rel="canonical" href="https://www.cityexpresstourist.com/payment.html">
 
-    <!-- Fav-icon -->
-    <link rel="apple-touch-icon" sizes="180X180" href="Image/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32X32" href="Image/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16X16" href="Image/fav/favicon-16x16.png">
-    
-    
-    <!-- Add Bootstrap-CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!--Add Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
-    <!-- Add AOS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="Image/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Image/fav/favicon-32x32.png">
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="Styles/custom.css">
-    <link rel="stylesheet" href="Styles/responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="Styles/shared.css">
+
+  <style>
+    .payment-section { padding: 80px 0; }
+    .payment-method-card {
+      background: #fff; border-radius: 16px;
+      padding: 32px; box-shadow: var(--shadow);
+      border: 2px solid #F0F0F0;
+      transition: all 0.3s; height: 100%;
+    }
+    .payment-method-card:hover { border-color: var(--brand-orange); transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+    .payment-method-card.featured { border-color: var(--brand-orange); }
+    .pm-icon { width: 64px; height: 64px; border-radius: 16px; background: var(--brand-gray); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .pm-icon img { height: 40px; object-fit: contain; }
+    .pm-icon i { font-size: 28px; }
+    .pm-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 20px; color: var(--brand-dark); margin-bottom: 8px; }
+    .pm-desc { font-size: 14.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+    .pm-list { list-style: none; padding: 0; margin: 0 0 24px; }
+    .pm-list li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #374151; margin-bottom: 8px; }
+    .pm-list li i { color: #10B981; font-size: 14px; flex-shrink: 0; }
+    .pm-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(16,185,129,0.1); color: #059669; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 100px; margin-bottom: 16px; }
+
+    /* UPI QR SECTION */
+    .upi-section { padding: 60px 0; background: var(--brand-gray); }
+    .upi-card { background: #fff; border-radius: 16px; padding: 32px; text-align: center; box-shadow: var(--shadow); }
+    .upi-qr { width: 160px; height: 160px; background: #f0f0f0; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; border: 2px dashed #ccc; }
+    .upi-id { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 17px; color: var(--brand-dark); background: var(--brand-gray); border-radius: 8px; padding: 10px 20px; margin: 12px 0; display: inline-block; }
+
+    /* PROCESS */
+    .process-section { padding: 80px 0; }
+    .step-card { text-align: center; padding: 20px; }
+    .step-num { width: 52px; height: 52px; border-radius: 50%; background: var(--brand-orange); color: #fff; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+    .step-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 16px; color: var(--brand-dark); margin-bottom: 8px; }
+    .step-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+    .step-connector { display: flex; align-items: center; justify-content: center; color: #CBD5E0; font-size: 24px; padding-top: 20px; }
+    @media(max-width:767px){ .step-connector { display: none; } }
+
+    /* TRUST */
+    .trust-badge { display: flex; align-items: center; gap: 10px; padding: 16px; background: var(--brand-gray); border-radius: var(--radius); }
+    .trust-badge i { font-size: 28px; color: var(--brand-orange); flex-shrink: 0; }
+    .trust-badge h6 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 14px; margin: 0 0 3px; }
+    .trust-badge p { font-size: 12.5px; color: var(--text-muted); margin: 0; }
+  </style>
 </head>
-
 <body>
-    <div class="pull-right toggle-right-sidebar">
-        <span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
-    </div>
 
-    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
-        <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+  <div class="announcement-bar">🎉 Special offer: Book outstation trips &amp; get <strong>10% off</strong>! <a href="tel:+919433013425">Call: +91 9433013425</a></div>
 
-            <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003"
-                style="overflow: hidden; outline: none;">
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container-fluid px-lg-5">
-             <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light w-100 ">
-    <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <figure class="m-0">
-                <img src="Image/logo2.png" alt="Logo" class="logo me-2">
-            </figure>
-             <!-- <h1 class="logo">CETTS</h1> -->
-        </a>
-
-        <!-- Mobile Toggle Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="buses.html">Our Buses</a></li>
-                <li class="nav-item"><a class="nav-link active" href="payment.html">Payment</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
+  <header id="header">
+    <div class="container-fluid px-lg-5">
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="Image/logo2.png" alt="City Express Tourist Transport Service"></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span style="color:#fff;font-size:22px;"><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <button class="btn-close btn-close-white position-absolute top-0 end-0 m-3 d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarNav"></button>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center" style="gap:8px">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="buses.html">Our Fleet</a></li>
+              <li class="nav-item"><a class="nav-link active" href="payment.html">Payment</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-2"><a class="nav-link btn-book-nav" href="tel:+919433013425"><i class="bi bi-telephone-fill me-1"></i>Book Now</a></li>
             </ul>
-
-            <!-- Search and Buttons -->
-            <!-- <div class="search_and_btn">
-                <button class="btn  login">Log In</button>
-                <button class="buttn get-started">Get Started</button>
-                <form class="d-flex align-items-center">
-                    <i class="bi bi-search"></i>
-                    
-                </form>
-            </div> -->
+          </div>
         </div>
+      </nav>
     </div>
-</nav>
-        </div>
-    </header>
+  </header>
 
-    <!-- Main Content -->
-    <div class="banner" id="home" >
-        <div class="inner-banner" style="background-image: url('/Image/payment-banner.jpg');">
-            <div class="container">
-
-                <div class="banner-text ">
-                    <h3>Payment</h3>
-                   
-                </div>
-            </div>
-        </div>
+  <div class="page-banner" style="background-image:url('Image/payment-banner.jpg')">
+    <div class="container">
+      <div class="page-banner-breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>Payment</span></div>
+      <h1>Secure Payments</h1>
+      <p>Multiple payment options — online, UPI, or cash. Your choice.</p>
     </div>
+  </div>
 
-    <section class="content-text py-5 payment-sec" id="">
-        <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-12 col-lg-12">
-                <h1 class="text-center py-3 mb-3">Our Payments</h1>
-              </div>
-            </div>
-            
-            <div class="row gap-y20" >
-                    <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="card">
-                            <img src="Image/Razorpay_logo.webp" class="card-img-top" alt="Razorpay_logo">
-                            <div class="card-body">
-                              <button>Pay with Razorpay</button>
-                              
-                           
-                          </div>
-                          </div>
-                    </div>
+  <!-- PAYMENT METHODS -->
+  <section class="payment-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Payment Options</span>
+        <h2 class="section-title">Pay Your Way</h2>
+        <p class="section-sub mx-auto">We offer flexible, secure payment options. No advance needed for city rides.</p>
+      </div>
+      <div class="row g-4">
 
-                    <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card">
-                            <img src="Image/online-payment-registration (1).jpg" class="card-img-top" alt="online-payment">
-                            <div class="card-body">
-                              <button>Online Payment Method</button>
-                              
-                            </div>
-                          </div>
-                    </div>
-                 
-                
-            </div>
+        <!-- Razorpay -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="payment-method-card featured d-flex flex-column">
+            <div class="pm-badge"><i class="bi bi-shield-check"></i> Recommended</div>
+            <div class="pm-icon"><img src="Image/Razorpay_logo.webp" alt="Razorpay payment"></div>
+            <div class="pm-title">Razorpay Gateway</div>
+            <div class="pm-desc">India's most trusted payment gateway. Pay securely online before your trip using cards, UPI or net banking.</div>
+            <ul class="pm-list">
+              <li><i class="bi bi-check-circle-fill"></i> Credit & Debit Cards (Visa, Mastercard, RuPay)</li>
+              <li><i class="bi bi-check-circle-fill"></i> UPI (GPay, PhonePe, Paytm)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Net Banking – 50+ banks</li>
+              <li><i class="bi bi-check-circle-fill"></i> 256-bit SSL encrypted</li>
+              <li><i class="bi bi-check-circle-fill"></i> Instant confirmation receipt</li>
+            </ul>
+            <a href="tel:+919433013425" class="btn-primary-cetts mt-auto" style="justify-content:center;">Get Payment Link <i class="bi bi-arrow-right"></i></a>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="footer-section pt-5">
-            <div class="container py-lg-2">
-                <div class="row">
-                    <div class="col-lg-12 asap-w3pvt-footer-logo">
-                        <!-- footer logo -->
-                        <a class="navbar-brand" href="index.html">
-                            <img src="/Image/logo2.png" alt="" class="footer-logo">
-                        </a>
-                        <!-- //footer logo -->
-                    </div>
-                    <!-- button -->
-                    <div class="col-lg-12 asap-w3pvt-footer text-lg-right text-center mt-3">
-                        <ul class="list-unstyled footer-nav-lavi">
-                            <li>
-                                <a href="index.html" class="scroll ">Home</a>
-                            </li>
-                            <li>
-                                <a class="scroll" href="about.html">About Us</a>
-                            </li>
-                            <li>
-                                <a class="scroll" href="services.html">Services</a>
-                            </li>
-                            <li>
-                                <a class=" scroll" href="buses.html">Our Buses</a>
-                            </li>
-                            <li>
-                                <a class=" scroll active" href="payment.html">Payment</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //button -->
-                    <div class=" mt-lg-0 mt-3">
-                        <div class="button-asap-w3pvts mt-0  text-center">
-                            <a href="contact.html" class="btn btn-sm thar-four scroll">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row copy-right-sec mt-4 pt-lg-4 pt-3  text-center">
-                    <!-- copyright -->
-                    <p class="copy-right-grids mt-lg-1">© 2024 City Express Tourist Transport Service.
-                    </p>
-                    <!-- //copyright -->
-                    <!-- social icons -->
-                    <!-- <div class="col-lg-4 asap-lavi-ocial-icons text-lg-right text-center mt-lg-0 mt-3">
-                        <ul class="list-unstyled w3pvt-icons">
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-facebook-f"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-dribbble"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-vk"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <!--social icons -->
-                </div>
-                <div class="move-top text-right"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3"
-                            aria-hidden="true"></span></a></div>
+        <!-- UPI Direct -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="payment-method-card d-flex flex-column">
+            <div class="pm-icon" style="background:rgba(255,107,0,0.1)"><i class="bi bi-phone" style="color:var(--brand-orange)"></i></div>
+            <div class="pm-title">Direct UPI Transfer</div>
+            <div class="pm-desc">Scan our QR code or send directly to our UPI ID. Instant confirmation — works on all UPI apps.</div>
+            <ul class="pm-list">
+              <li><i class="bi bi-check-circle-fill"></i> Google Pay (GPay)</li>
+              <li><i class="bi bi-check-circle-fill"></i> PhonePe</li>
+              <li><i class="bi bi-check-circle-fill"></i> Paytm</li>
+              <li><i class="bi bi-check-circle-fill"></i> BHIM UPI</li>
+              <li><i class="bi bi-check-circle-fill"></i> Any UPI-enabled bank app</li>
+            </ul>
+            <div style="background:var(--brand-gray);border-radius:8px;padding:12px;text-align:center;margin-top:auto;">
+              <div style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">UPI ID</div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--brand-dark);font-size:15px;">cityexpresstourist@upi</div>
             </div>
+          </div>
         </div>
-    </footer>
+
+        <!-- Cash -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="payment-method-card d-flex flex-column">
+            <div class="pm-icon" style="background:rgba(16,185,129,0.1)"><i class="bi bi-cash-stack" style="color:#10B981;font-size:28px;"></i></div>
+            <div class="pm-title">Cash on Service</div>
+            <div class="pm-desc">Prefer cash? No problem. Pay the driver directly at the end of your ride. Available for all local & outstation services.</div>
+            <ul class="pm-list">
+              <li><i class="bi bi-check-circle-fill"></i> No advance needed for city rides</li>
+              <li><i class="bi bi-check-circle-fill"></i> Pay driver at destination</li>
+              <li><i class="bi bi-check-circle-fill"></i> Small token for outstation bookings</li>
+              <li><i class="bi bi-check-circle-fill"></i> Printed receipt available</li>
+              <li><i class="bi bi-check-circle-fill"></i> Transparent billing, no hidden fees</li>
+            </ul>
+            <a href="tel:+919433013425" class="btn-outline-cetts mt-auto" style="justify-content:center;">Book a Cash Ride</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- TRUST BADGES -->
+  <section style="padding:60px 0;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Why Pay with Us</span>
+        <h2 class="section-title">Your Money, Safe & Transparent</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100"><div class="trust-badge"><i class="bi bi-shield-lock"></i><div><h6>SSL Secured</h6><p>All online payments encrypted with bank-grade security</p></div></div></div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150"><div class="trust-badge"><i class="bi bi-receipt"></i><div><h6>Digital Receipts</h6><p>Get WhatsApp/email receipt for every transaction</p></div></div></div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200"><div class="trust-badge"><i class="bi bi-arrow-counterclockwise"></i><div><h6>Refund Policy</h6><p>Free cancellation up to 4 hrs before pickup</p></div></div></div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="250"><div class="trust-badge"><i class="bi bi-eye-slash"></i><div><h6>No Hidden Charges</h6><p>What we quote is exactly what you pay</p></div></div></div>
+      </div>
+    </div>
+  </section>
 
-     <!-- AOS JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-     <script>
-      AOS.init(); 
-     </script>
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-lg-7"><h2>Ready to Book Your Ride?</h2><p>Get a quote now. Payment is simple and always transparent.</p></div>
+        <div class="col-lg-5 d-flex flex-wrap gap-3 justify-content-lg-end">
+          <a href="tel:+919433013425" class="btn-cta-white"><i class="bi bi-telephone-fill"></i> +91 9433013425</a>
+          <a href="https://wa.me/919433013425?text=I+want+to+book+and+pay+online" target="_blank" class="btn-cta-outline"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="/js/script.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand"><img src="Image/logo2.png" alt="City Express Tourist Transport"></div>
+          <p class="footer-desc">West Bengal's trusted car booking service providing reliable, safe and comfortable transportation since 2018.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/19uC1pb7SM/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/919433013425" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="buses.html">Our Fleet</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <p class="footer-heading">Payment</p>
+          <ul class="footer-links">
+            <li><a href="#">Razorpay Online</a></li>
+            <li><a href="#">UPI / GPay</a></li>
+            <li><a href="#">PhonePe</a></li>
+            <li><a href="#">Cash on Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-heading">Contact Info</p>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>1/1 Ramkrishna Garh Road, Itagacha, Kolkata – 700 079</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><div><a href="tel:+919433013425">+91 9433013425</a><br><a href="tel:+919830023712">+91 9830023712</a></div></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><a href="mailto:cityexpresstourist69@gmail.com">cityexpresstourist69@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 City Express Tourist Transport Service. All rights reserved.</p>
+        <p>Designed with ❤️ in Kolkata</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919433013425?text=Hi%2C+I+want+to+book+a+ride" target="_blank" class="whatsapp-float" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="go-top-btn" id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <div class="mobile-booking-bar">
+    <a href="tel:+919433013425" class="mob-call"><i class="bi bi-telephone-fill"></i> Call to Book</a>
+    <a href="https://wa.me/919433013425?text=Hi%2C+I+want+to+book+a+ride" target="_blank" class="mob-wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 700 });
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+      document.getElementById('goTopBtn').classList.toggle('visible', window.scrollY > 400);
+    });
+  </script>
 </body>
-
 </html>
