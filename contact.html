@@ -1,246 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Express Tourist Transport Service</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | City Express Tourist Transport – Kolkata, West Bengal</title>
+  <meta name="description" content="Contact City Express Tourist Transport Service in Kolkata. Call +91 9433013425, WhatsApp us, or email cityexpresstourist69@gmail.com. Available 24/7.">
+  <meta name="keywords" content="contact City Express tourist transport, cab booking Kolkata phone, car rental Kolkata contact, transport service Kolkata address">
+  <link rel="canonical" href="https://www.cityexpresstourist.com/contact.html">
 
-    <!-- Fav-icon -->
-    <link rel="apple-touch-icon" sizes="180X180" href="Image/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32X32" href="Image/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16X16" href="Image/fav/favicon-16x16.png">
-    
-    
-    <!-- Add Bootstrap-CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!--Add Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
-    <!-- Add AOS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="Image/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Image/fav/favicon-32x32.png">
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="Styles/custom.css">
-    <link rel="stylesheet" href="Styles/responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="Styles/shared.css">
+
+  <style>
+    .contact-section { padding: 80px 0; }
+    .contact-info-card {
+      background: var(--brand-dark);
+      border-radius: 16px;
+      padding: 36px 28px;
+      height: 100%;
+      color: #fff;
+    }
+    .contact-info-card h3 { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.6rem; margin-bottom: 8px; }
+    .contact-info-card p { color: rgba(255,255,255,0.6); font-size: 14.5px; line-height: 1.7; margin-bottom: 28px; }
+
+    .contact-detail-item {
+      display: flex; align-items: flex-start;
+      gap: 14px; padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .contact-detail-item:last-child { border-bottom: none; }
+    .cd-icon {
+      width: 44px; height: 44px;
+      background: rgba(255,107,0,0.15);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .cd-icon i { font-size: 20px; color: var(--brand-orange); }
+    .cd-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: rgba(255,255,255,0.4); margin-bottom: 3px; }
+    .cd-value { font-size: 15px; color: #fff; font-weight: 500; }
+    .cd-value a { color: #fff; text-decoration: none; }
+    .cd-value a:hover { color: var(--brand-orange); }
+
+    .contact-channels { display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap; }
+    .channel-btn {
+      flex: 1; min-width: 120px;
+      text-align: center; padding: 11px 16px;
+      border-radius: 8px;
+      font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 13.5px;
+      text-decoration: none;
+      display: flex; align-items: center; justify-content: center; gap: 7px;
+      transition: all 0.2s;
+    }
+    .ch-call { background: var(--brand-orange); color: #fff; }
+    .ch-call:hover { background: var(--brand-orange-light); color: #fff; }
+    .ch-wa { background: #25D366; color: #fff; }
+    .ch-wa:hover { background: #1EBE5A; color: #fff; }
+    .ch-mail { background: rgba(255,255,255,0.07); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
+    .ch-mail:hover { background: rgba(255,255,255,0.12); color: #fff; }
+
+    /* CONTACT FORM */
+    .contact-form-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+      height: 100%;
+    }
+    .contact-form-card h4 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--brand-dark); margin-bottom: 6px; }
+    .contact-form-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
+    .cf-label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-muted); margin-bottom: 5px; }
+    .cf-input {
+      width: 100%; border: 1.5px solid #E5E7EB; border-radius: 8px;
+      padding: 11px 14px; font-size: 14.5px; color: #1F2937;
+      font-family: 'DM Sans', sans-serif;
+      outline: none; transition: border-color 0.2s; background: #fff;
+    }
+    .cf-input:focus { border-color: var(--brand-orange); box-shadow: 0 0 0 3px rgba(255,107,0,0.1); }
+    .cf-submit {
+      width: 100%; background: var(--brand-orange); color: #fff;
+      border: none; border-radius: 8px; padding: 13px;
+      font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 15px;
+      cursor: pointer; transition: all 0.25s; display: flex;
+      align-items: center; justify-content: center; gap: 8px;
+    }
+    .cf-submit:hover { background: var(--brand-orange-light); transform: translateY(-1px); }
+    .cf-success {
+      display: none; background: rgba(16,185,129,0.1);
+      border: 1.5px solid rgba(16,185,129,0.3);
+      border-radius: 8px; padding: 14px 16px;
+      font-size: 14px; color: #059669; margin-top: 12px;
+    }
+
+    /* MAP */
+    .map-section { padding: 0 0 80px; }
+    .map-wrap { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); height: 380px; }
+    .map-wrap iframe { width: 100%; height: 100%; border: none; }
+
+    /* QUICK CONTACT CARDS */
+    .qc-section { padding: 60px 0; background: var(--brand-gray); }
+    .qc-card {
+      background: #fff; border-radius: var(--radius);
+      padding: 24px; text-align: center;
+      box-shadow: var(--shadow); transition: all 0.3s; height: 100%;
+    }
+    .qc-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+    .qc-card i { font-size: 32px; color: var(--brand-orange); margin-bottom: 12px; display: block; }
+    .qc-card h5 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 16px; margin-bottom: 6px; color: var(--brand-dark); }
+    .qc-card p, .qc-card a { font-size: 14px; color: var(--text-muted); text-decoration: none; margin: 0; line-height: 1.6; display: block; }
+    .qc-card a:hover { color: var(--brand-orange); }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "City Express Tourist Transport Service",
+    "image": "https://www.cityexpresstourist.com/Image/logo2.png",
+    "telephone": "+919433013425",
+    "email": "cityexpresstourist69@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1/1 Ramkrishna Garh Road, Itagacha",
+      "addressLocality": "Kolkata",
+      "addressRegion": "West Bengal",
+      "postalCode": "700079",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],
+    "geo": {"@type":"GeoCoordinates","latitude":"22.5726","longitude":"88.3639"},
+    "priceRange": "₹₹"
+  }
+  </script>
 </head>
-
 <body>
-    <div class="pull-right toggle-right-sidebar">
-        <span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
+
+  <div class="announcement-bar">🎉 Special offer: Book outstation trips &amp; get <strong>10% off</strong>! <a href="tel:+919433013425">Call: +91 9433013425</a></div>
+
+  <header id="header">
+    <div class="container-fluid px-lg-5">
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="Image/logo2.png" alt="City Express Tourist Transport Service"></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span style="color:#fff;font-size:22px;"><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <button class="btn-close btn-close-white position-absolute top-0 end-0 m-3 d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarNav"></button>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center" style="gap:8px">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="buses.html">Our Fleet</a></li>
+              <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-2"><a class="nav-link btn-book-nav" href="tel:+919433013425"><i class="bi bi-telephone-fill me-1"></i>Book Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
-        <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+  <div class="page-banner" style="background-image:url('Image/contact-banner.jpg')">
+    <div class="container">
+      <div class="page-banner-breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>Contact Us</span></div>
+      <h1>Get In Touch</h1>
+      <p>We respond within minutes — available 24 hours a day</p>
+    </div>
+  </div>
 
-            <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003"
-                style="overflow: hidden; outline: none;">
+  <!-- QUICK CONTACT CARDS -->
+  <section class="qc-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="qc-card">
+            <i class="bi bi-telephone-fill"></i>
+            <h5>Call Us</h5>
+            <a href="tel:+919433013425">+91 9433013425</a>
+            <a href="tel:+919830023712">+91 9830023712</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+          <div class="qc-card">
+            <i class="bi bi-whatsapp" style="color:#25D366"></i>
+            <h5>WhatsApp</h5>
+            <a href="https://wa.me/919433013425" target="_blank">+91 9433013425</a>
+            <p style="margin-top:4px;font-size:12px;">Usually replies within 5 mins</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="qc-card">
+            <i class="bi bi-envelope-fill"></i>
+            <h5>Email Us</h5>
+            <a href="mailto:cityexpresstourist69@gmail.com">cityexpresstourist69@gmail.com</a>
+            <p style="margin-top:4px;font-size:12px;">We reply within 12 hours</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+          <div class="qc-card">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h5>Visit Us</h5>
+            <p>1/1 Ramkrishna Garh Road<br>Itagacha, Kolkata – 700 079</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- INFO PANEL -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info-card">
+            <h3>Let's Plan Your Journey</h3>
+            <p>Tell us where you want to go. Our team will get back to you quickly with the best vehicle option and a transparent quote.</p>
+
+            <div class="contact-detail-item">
+              <div class="cd-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <div class="cd-label">Our Office</div>
+                <div class="cd-value">1/1 Ramkrishna Garh Road, Itagacha<br>Kolkata – 700 079, West Bengal</div>
+              </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container-fluid px-lg-5">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light w-100 ">
-                <div class="container-fluid">
-                    <!-- Logo -->
-                    <a class="navbar-brand d-flex align-items-center" href="#">
-                        <figure class="m-0">
-                            <img src="Image/logo2.png" alt="Logo" class="logo me-2">
-                        </figure>
-                    </a>
-
-                    <!-- Mobile Toggle Button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Navbar Links -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="buses.html">Our Buses</a></li>
-                            <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="banner" id="home">
-        <div class="inner-banner" style="background-image: url('/Image/contact-banner.jpg');">
-            <div class="container">
-                <div class="banner-text ">
-                    <h3>Contact Us</h3>
-                </div>
+            <div class="contact-detail-item">
+              <div class="cd-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <div class="cd-label">Phone Numbers</div>
+                <div class="cd-value"><a href="tel:+919433013425">+91 9433013425</a><br><a href="tel:+919830023712">+91 9830023712</a></div>
+              </div>
             </div>
-        </div>
-    </div>
-    <section class="content-text py-5" >
-        <div class="container">
-            <div class="row gap-y20">
-                <div class="col-12 col-lg-9 col-md-12" data-aos="fade-up" data-aos-delay="250">
-                    <div class="contacts-form bg-light">
-                        <h1 class="text-center mb-3">Contact Us</h1>
-                        <form>
-                            <!-- Name -->
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
-                                    required>
-                            </div>
-
-                            <!-- Email -->
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
-                                    required>
-                            </div>
-
-                            <!-- Subject -->
-                            <div class="mb-3">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" placeholder="Enter the subject"
-                                    required>
-                            </div>
-
-                            <!-- Message -->
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"
-                                    required></textarea>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <div class="">
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-3 col-md-12 contact-details">
-                    <div class="col-12" data-aos="fade-up" data-aos-delay="350">
-                        <div class="card">
-                            <i class="bi bi-geo-alt-fill"></i>
-
-                            <div class="">
-                                <h6>Location</h6>
-                                <p>City Express Tourist Transport Service
-                                    <br>1/1 No, Ramkrishna Garh Road,Itagacha
-                                    <br>Kolkata - 700 079
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 " data-aos="fade-up" data-aos-delay="300">
-                        <div class="card">
-                            <i class="bi bi-envelope-open"></i>
-
-                            <h6>Email</h6>
-                            <a href="/cdn-cgi/l/email-protection#630a0d050c23061b020e130f064d000c0e"><span
-                                    class="__cf_email__"
-                                    data-cfemail="4825292124082d30292538242d662b2725">paulkyodai@yahoo.in</span></a>
-                            <br>
-                        </div>
-                    </div>
-
-                    <div class="col-12 " data-aos="fade-up" data-aos-delay="350">
-                        <div class="card">
-                            <i class="bi bi-phone"></i>
-
-                            <div class="">
-                                <h6>Phone Number</h6>
-                                <p class="m-0">+91 9433013425</p>
-                                <p>+91 9830023712</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+            <div class="contact-detail-item">
+              <div class="cd-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <div class="cd-label">Email</div>
+                <div class="cd-value"><a href="mailto:cityexpresstourist69@gmail.com">cityexpresstourist69@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="cd-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <div class="cd-label">Working Hours</div>
+                <div class="cd-value">Open 24 Hours, 7 Days a Week</div>
+              </div>
             </div>
 
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-section pt-5">
-            <div class="container py-lg-2">
-                <div class="row">
-                    <div class="col-lg-12 asap-w3pvt-footer-logo">
-                        <!-- footer logo -->
-                        <a class="navbar-brand" href="index.html">
-                            <img src="/Image/logo2.png" alt="" class="footer-logo">
-                        </a>
-                        <!-- //footer logo -->
-                    </div>
-                    <!-- button -->
-                    <div class="col-lg-12 asap-w3pvt-footer text-lg-right text-center mt-3">
-                        <ul class="list-unstyled footer-nav-lavi">
-                            <li>
-                                <a href="index.html" class="scroll ">Home</a>
-                            </li>
-                            <li>
-                                <a class="scroll" href="about.html">About Us</a>
-                            </li>
-                            <li>
-                                <a class="scroll" href="services.html">Services</a>
-                            </li>
-                            <li>
-                                <a class=" scroll" href="buses.html">Our Buses</a>
-                            </li>
-                            <li>
-                                <a class=" scroll" href="payment.html">Payment</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //button -->
-                    <div class=" mt-lg-0 mt-3">
-                        <div class="button-asap-w3pvts mt-0  text-center">
-                            <a href="contact.html" class="btn btn-sm thar-four scroll-btn active">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row copy-right-sec mt-4 pt-lg-4 pt-3  text-center">
-                    <!-- copyright -->
-                    <p class="copy-right-grids mt-lg-1">© 2024 City Express Tourist Transport Service.
-                    </p>
-
-                </div>
-                <div class="move-top text-right"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3"
-                            aria-hidden="true"></span></a></div>
+            <div class="contact-channels">
+              <a href="tel:+919433013425" class="channel-btn ch-call"><i class="bi bi-telephone-fill"></i> Call Now</a>
+              <a href="https://wa.me/919433013425?text=Hi%2C+I+want+to+book+a+ride" target="_blank" class="channel-btn ch-wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+              <a href="mailto:cityexpresstourist69@gmail.com" class="channel-btn ch-mail"><i class="bi bi-envelope"></i> Email</a>
             </div>
+
+            <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.07);">
+              <p style="font-size:13px;color:rgba(255,255,255,0.45);margin-bottom:12px;">Follow us on social media</p>
+              <div style="display:flex;gap:10px;">
+                <a href="https://www.facebook.com/share/19uC1pb7SM/" target="_blank" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;transition:all 0.2s;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;transition:all 0.2s;" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;transition:all 0.2s;" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
 
+        <!-- FORM -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="contact-form-card">
+            <h4>Send Us a Message</h4>
+            <p>Fill in the form and we'll call you back within minutes during business hours, or the next morning for late-night messages.</p>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_name">Full Name *</label>
+                  <input type="text" id="cf_name" class="cf-input" placeholder="Your full name" required>
+                </div>
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_phone">Phone / WhatsApp *</label>
+                  <input type="tel" id="cf_phone" class="cf-input" placeholder="+91 XXXXX XXXXX" required>
+                </div>
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_email">Email Address</label>
+                  <input type="email" id="cf_email" class="cf-input" placeholder="you@email.com">
+                </div>
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_service">Service Needed</label>
+                  <select id="cf_service" class="cf-input">
+                    <option value="">Select service...</option>
+                    <option>City Ride</option>
+                    <option>Airport Transfer</option>
+                    <option>Outstation Trip</option>
+                    <option>Group / Bus Hire</option>
+                    <option>Corporate Transport</option>
+                    <option>Wedding / Event</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_from">Pickup Location</label>
+                  <input type="text" id="cf_from" class="cf-input" placeholder="City / area / address">
+                </div>
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_to">Destination</label>
+                  <input type="text" id="cf_to" class="cf-input" placeholder="City / area / address">
+                </div>
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_date">Travel Date</label>
+                  <input type="date" id="cf_date" class="cf-input">
+                </div>
+                <div class="col-sm-6">
+                  <label class="cf-label" for="cf_pax">Number of Passengers</label>
+                  <select id="cf_pax" class="cf-input">
+                    <option>1–4 passengers</option>
+                    <option>5–7 passengers</option>
+                    <option>8–15 passengers</option>
+                    <option>16–30 passengers</option>
+                    <option>31–50 passengers</option>
+                    <option>50+ passengers</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="cf-label" for="cf_msg">Additional Details</label>
+                  <textarea id="cf_msg" class="cf-input" rows="4" placeholder="Any special requirements, preferred vehicle, return trip info..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="cf-submit">Send Message via WhatsApp <i class="bi bi-whatsapp"></i></button>
+                </div>
+                <div class="col-12">
+                  <div class="cf-success" id="cfSuccess">
+                    <i class="bi bi-check-circle-fill me-2"></i>Your enquiry has been sent! We'll get back to you shortly.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </div>
+  </section>
 
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init(); 
-    </script>
+  <!-- MAP -->
+  <section class="map-section">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">Our Location</h2>
+      </div>
+      <div class="map-wrap" data-aos="fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2!2d88.3639!3d22.5726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM0JzIxLjQiTiA4OMKwMjEnNTAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="City Express Tourist Transport Service location – Itagacha, Kolkata">
+        </iframe>
+      </div>
+      <div class="text-center mt-3">
+        <a href="https://maps.google.com/?q=22.5726,88.3639" target="_blank" class="btn-outline-cetts" style="display:inline-flex;">
+          <i class="bi bi-map"></i> Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <script src="/js/script.js"></script>
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-lg-7"><h2>Need a Ride Right Now?</h2><p>Don't wait — call or WhatsApp and we'll sort you out within minutes.</p></div>
+        <div class="col-lg-5 d-flex flex-wrap gap-3 justify-content-lg-end">
+          <a href="tel:+919433013425" class="btn-cta-white"><i class="bi bi-telephone-fill"></i> +91 9433013425</a>
+          <a href="https://wa.me/919433013425?text=Hi%2C+I+need+a+ride+now" target="_blank" class="btn-cta-outline"><i class="bi bi-whatsapp"></i> WhatsApp Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand"><img src="Image/logo2.png" alt="City Express Tourist Transport"></div>
+          <p class="footer-desc">West Bengal's trusted car booking service providing reliable, safe and comfortable transportation since 2018.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/19uC1pb7SM/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/919433013425" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="buses.html">Our Fleet</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <p class="footer-heading">Services</p>
+          <ul class="footer-links">
+            <li><a href="services.html">City Rides</a></li>
+            <li><a href="services.html">Airport Transfers</a></li>
+            <li><a href="services.html">Outstation</a></li>
+            <li><a href="services.html">Group Travel</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-heading">Contact Info</p>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>1/1 Ramkrishna Garh Road, Itagacha, Kolkata – 700 079</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><div><a href="tel:+919433013425">+91 9433013425</a><br><a href="tel:+919830023712">+91 9830023712</a></div></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><a href="mailto:cityexpresstourist69@gmail.com">cityexpresstourist69@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 City Express Tourist Transport Service. All rights reserved.</p>
+        <p>Designed with ❤️ in Kolkata</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919433013425?text=Hi%2C+I+want+to+book+a+ride" target="_blank" class="whatsapp-float" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="go-top-btn" id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <div class="mobile-booking-bar">
+    <a href="tel:+919433013425" class="mob-call"><i class="bi bi-telephone-fill"></i> Call to Book</a>
+    <a href="https://wa.me/919433013425?text=Hi%2C+I+want+to+book+a+ride" target="_blank" class="mob-wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 700 });
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+      document.getElementById('goTopBtn').classList.toggle('visible', window.scrollY > 400);
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('cf_name').value;
+      const phone = document.getElementById('cf_phone').value;
+      const service = document.getElementById('cf_service').value;
+      const from = document.getElementById('cf_from').value;
+      const to = document.getElementById('cf_to').value;
+      const date = document.getElementById('cf_date').value;
+      const pax = document.getElementById('cf_pax').value;
+      const msg = document.getElementById('cf_msg').value;
+      const wa = `Hi, I'm ${name}. I need transport details:%0AService: ${service}%0AFrom: ${from}%0ATo: ${to}%0ADate: ${date}%0APassengers: ${pax}%0APhone: ${phone}%0ANote: ${msg}`;
+      window.open('https://wa.me/919433013425?text=' + wa, '_blank');
+      document.getElementById('cfSuccess').style.display = 'block';
+    });
+  </script>
 </body>
-
 </html>
