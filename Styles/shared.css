@@ -53,7 +53,7 @@ body {
 }
 #header.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
 
-.navbar-brand img { height: 48px; width: auto; }
+.navbar-brand img { height: 48px; width: auto; filter: brightness(6); }
 
 .nav-link {
   color: rgba(255,255,255,0.82) !important;
@@ -256,7 +256,7 @@ body {
 
 /* ── FOOTER ── */
 footer { background: var(--brand-dark); padding: 50px 0 0; }
-.footer-brand img { height: 44px; }
+.footer-brand img { height: 44px; filter: brightness(6);}
 .footer-desc { color: rgba(255,255,255,0.5); font-size: 14px; line-height: 1.7; margin: 14px 0 20px; }
 .footer-social { display: flex; gap: 10px; }
 .footer-social a {
